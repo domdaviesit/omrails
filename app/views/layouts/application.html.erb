@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Omrails</title>
+    <title>One Month Rails Project-1</title>
+    <!-- csrf tokens protect your site from getting hacked -->
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +10,10 @@
   </head>
 
   <body>
+    <!-- navigation links -->
+    <%= link_to  "Home", root_path %>
+    <%= link_to  "About", about_path %>
+    <%= link_to  "Contact", contact_path %>
     <%= yield %>
   </body>
 </html>
